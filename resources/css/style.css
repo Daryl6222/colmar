@@ -1,3 +1,5 @@
+/* universal style */
+
 body {
   background-color: white;
   font: 16px;
@@ -6,18 +8,22 @@ body {
 }
 
 h2 {
-color: grey;
+color: #226DFF;
 font-size: 1.5rem;
 font-weight: bold;
 }
 
 h4 {
-  color: grey;
+  color: #0C44B2;
   font-size: 1.3rem;
 }
 
 a {
-  color: blue;
+  color: #FFBA22;
+}
+
+a:hover {
+  color: #CC5E07;
 }
 
 .container {
@@ -25,13 +31,34 @@ a {
   margin: auto;
 }
 
+/* header style */
+
 nav {
   width: 100%;
   height: 64px;
 }
 
+nav ul.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .full-nav {
+    display: none;
+  }
+  nav ul.mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 nav a {
-  color: grey;
+  color: #2c2c2c;
+}
+
+nav a:hover {
+  color: #FFBA22;
 }
 
 ul {
@@ -50,9 +77,10 @@ nav li {
   flex-grow: 1;
 }
 
-.colmar-title {
+.colmar-title a {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #2c2c2c;
 }
 
 .academy-title {
@@ -62,7 +90,7 @@ nav li {
 
 .hero-section {
   display: flex;
-  background-color: lightgrey;
+  background-color: #f7f7f7;
   width: 100%;
 }
 
@@ -72,8 +100,36 @@ nav li {
   padding: 32px 24px;
 }
 
-.hero-title-section {
-  max-width: 30%;
+@media only screen and (max-width: 860px) {
+  .hero-section {
+    display: block;
+    padding: 0;
+  }
+  .main-art-img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .hero-title-section {
+    width: 100%;
+    height: 22rem;
+  }
+  .hero-title-section h2 {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .hero-title-section h3 {
+    padding-top: 1.5rem;
+    padding-bottom: .15rem;
+    font-size: .75rem;
+    text-align: center;
+  }
+  .hero-btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
 }
 
 .hero-title-section h2 {
@@ -87,22 +143,31 @@ nav li {
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
+  color: grey;
 }
 
 .hero-btn {
   padding: 8px 6rem;
   font-size: 1.25rem;
-  background-color: grey;
-  color: white;
+  background-color: #FFBA22;
   border: none;
   box-shadow: 0 4px 5px rgba(0, 0, 0, .4);
 }
 
+.hero-btn a {
+  color: white;
+}
+
 .hero-btn:hover {
-  background-color: grey;
   color: white;
   box-shadow: none;
 }
+
+.hero-btn:hover {
+  transition: box-shadow 250ms linear 5ms;
+}
+
+/* main section style */
 
 .main-section {
   display: flex;
@@ -130,17 +195,53 @@ nav li {
   padding: 32px 24px;
 }
 
-aside {
-  max-width: 40%;
+@media only screen and (max-width: 950px) {
+  .main-section {
+    display: block;
+  }
+  .main-article {
+    display: none;
+  }
+  aside {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .article-item {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .article-content {
+    height: 90%;
+    flex-grow: 1;
+    margin: 0 auto;
+    flex-basis: 15rem;
+  }
+  .article-item .border {
+    width: 100%;
+  }
+  .article-img {
+    display: none;
+  }
+  img.article-img-mobile {
+    display: block;
+  }
+}
+
+.article-img-mobile {
+  display: none;
 }
 
 .border {
-  border-left: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .greybg {
-  background-color: lightgrey;
+  background-color: #f7f7f7;
 }
 
 .articles {
@@ -150,12 +251,12 @@ aside {
 .article-img {
   max-height: 7.5rem;
   width: auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .article-item {
   display: flex;
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 .article-content {
@@ -166,15 +267,50 @@ aside {
 }
 
 .article-content h4 {
-  padding-bottom: 8px;
+  padding-bottom: .5rem;
 }
 
 .article-content p {
-  padding-bottom: 8px;
+  padding-bottom: .5rem;
+}
+
+/* learning section style */
+
+@media only screen and (max-width: 900px) {
+
+  .learning-section {
+    margin: 0 auto;
+  }
+  .topic-img {
+    display: none;
+  }
+  .courses {
+    display: none;
+  }
+  .topic-brief {
+    display: none;
+  }
+  .topic-container {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .learning-topics {
+    margin: 0 auto;
+  }
+  .learning-topics h4 {
+    background-color: #226DFF;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+    color: white;
+    min-width: 15rem;
+    margin: 0 auto;
+  }
 }
 
 .learning-section {
-  background-color: lightgrey;
+  background-color: #f7f7f7;
   padding-bottom: 1rem;
 }
 
@@ -204,6 +340,10 @@ aside {
   height: auto;
 }
 
+.courses {
+  color: #CC5E07;
+}
+
 .learning-topics h4 {
   padding: 1rem .75rem .25rem 1rem;
 }
@@ -215,6 +355,8 @@ aside {
 p.topic-brief {
   line-height: 1.6;
 }
+
+/* thesis style */
 
 video {
   padding-left: 1.5rem;
@@ -231,12 +373,14 @@ video {
   padding-top: 1.5rem;
 }
 
+/* footer style */
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #f7f7f7;
 }
 
 .copy {
@@ -252,4 +396,33 @@ footer li {
 
 footer a {
   color: grey;
+}
+
+a img.topic-img {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+}
+
+a img.topic-img:hover {
+  box-shadow: none;
+  transition: box-shadow 250ms linear 5ms;
+}
+
+@media only screen and (max-width: 900px) {
+  #video-mobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .video-title {
+    display: none;
+  }
+  .footer-art {
+    display: none;
+  }
+  .footer-nav ul {
+    display: none;
+  }
+  .video-ex {
+    width: 100%;
+  }
 }

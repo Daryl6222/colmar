@@ -18,12 +18,18 @@
 
     <header>
       <nav>
-        <ul>
+        <ul class="full-nav">
           <li class="logo"><a href="#"><img src="./resources/images/ic-logo.svg" class="logo-img" alt="logo"/></a><span class="colmar-title"><a href="#">COLMAR</span> <span class="academy-title">ACADEMY</a></span></li>
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">Our companies</a></li>
           <li><a href="#">Sign in</a></li>
+        </ul>
+        <ul class="mobile-nav">
+          <li><a href="#"><img src="./resources/images/ic-logo.svg" class="logo-img" alt="logo"/></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"/></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg"/></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg"/></a></li>
         </ul>
       </nav>
     </header>
@@ -31,22 +37,19 @@
     <!-- hero header page content -->
 
     <div class="hero-section">
-      <img src="./resources/images/banner.jpg" alt="students reading" class="main-art-img"/>
+      <a href="#"><img src="./resources/images/banner.jpg" alt="students reading" class="main-art-img"/></a>
       <div class="hero-title-section">
         <h2>Learn something new everyday</h2>
         <h3>Lorem ipsum dolar sit amet, consectetur adipiscing elite.</h3>
-        <button class="hero-btn">Start here</button>
+        <button class="hero-btn"><a href="#">Start here</a></button>
       </div>
-
-
-
     </div>
 
     <!-- main article page section -->
 
     <div class="main-section">
       <article class="main-article">
-        <img src="./resources/images/information-main.jpg" alt="man reading book" class="main-info-img"/>
+        <a href="#"><img src="./resources/images/information-main.jpg" alt="man reading book" class="main-info-img"/></a>
         <div class="main-article-info">
         <h2>It doesn't hurt to keep practicing</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
@@ -55,7 +58,8 @@
       </article>
       <aside class="articles">
         <article class="article-item border">
-          <img src="./resources/images/information-orientation.jpg" class="article-img" alt="people walking"/>
+          <a href="#"><img src="./resources/images/information-orientation.jpg" class="article-img" alt="people walking"/></a>
+          <a href="#"><img src="./resources/images/information-orientation-mobile.jpg" class="article-img-mobile" alt="people walking"/></a>
           <div class="article-content">
             <h4 class="article-title">Orientation date</h4>
             <p class="article-date">Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -63,7 +67,8 @@
           </div>
         </article>
         <article class="article-item border">
-          <img src="./resources/images/information-campus.jpg" class="article-img" alt="people walking"/>
+          <a href="#"><img src="./resources/images/information-campus.jpg" class="article-img" alt="people walking"/></a>
+          <a href="#"><img src="./resources/images/information-campus-mobile.jpg" class="article-img-mobile" alt="people walking"/></a>
           <div class="article-content">
             <h4 class="article-title">Our campus</h4>
             <p class="article-date">Find which campus is close by you</p>
@@ -71,7 +76,8 @@
           </div>
         </article>
         <article class="article-item border greybg">
-          <img src="./resources/images/information-guest-lecture.jpg" class="article-img" alt="people walking"/>
+          <a href="#"><img src="./resources/images/information-guest-lecture.jpg" class="article-img" alt="people walking"/></a>
+          <a href="#"><img src="./resources/images/information-guest-lecture-mobile.jpg" class="article-img-mobile" alt="people walking"/></a>
           <div class="article-content">
             <h4 class="article-title">Our guest lecture</h4>
             <p class="article-date">Join a keynote with Oliver Sack<br>
@@ -88,45 +94,45 @@
       <h2>Start learning</h2>
       <div class="topic-container">
         <div class="learning-topics">
-          <img src="./resources/images/course-software.jpg" alt="man reading book" class="topic-img"/>
-          <h4>Software engineering</h4>
-          <p>COURSES</p>
+          <a href="#"><img src="./resources/images/course-software.jpg" alt="man reading book" class="topic-img"/></a>
+          <h4><a href="#" class="courses-link">Software engineering</a></h4>
+          <p class="courses">COURSES</p>
           <p class="topic-brief">Web Developent, Mobile<br>
             Development, iOT, APIs</p>
         </div>
         <div class="learning-topics">
-          <img src="./resources/images/course-computer-art.jpg" alt="man reading book" class="topic-img"/>
-          <h4>Computer art</h4>
-          <p>COURSES</p>
+            <a href="#"><img src="./resources/images/course-computer-art.jpg" alt="man reading book" class="topic-img"/></a>
+          <h4><a href="#" class="courses-link">Computer art</a></h4>
+          <p class="courses">COURSES</p>
           <p class="topic-brief">Imaging & Design, Web Design,<br>
             Motion Graphics & Visual Effectcs,<br>
           Computer Animation</p>
         </div>
         <div class="learning-topics">
-          <img src="./resources/images/course-design.jpg" alt="man reading book" class="topic-img"/>
-          <h4>Design</h4>
-          <p>COURSES</p>
+            <a href="#"><img src="./resources/images/course-design.jpg" alt="man reading book" class="topic-img"/></a>
+          <h4><a href="#" class="courses-link">Design</a></h4>
+          <p class="courses">COURSES</p>
           <p class="topic-brief">User Experience Design, User<br>
             Research, Visual Design</p>
         </div>
         <div class="learning-topics">
-          <img src="./resources/images/course-data.jpg" alt="man reading book" class="topic-img"/>
-          <h4>Data</h4>
-          <p>COURSES</p>
+            <a href="#"><img src="./resources/images/course-data.jpg" alt="man reading book" class="topic-img"/></a>
+          <h4><a href="#" class="courses-link">Data</a></h4>
+          <p class="courses">COURSES</p>
           <p class="topic-brief">Data Science, Big Data, SQL, Data<br>
             Visualization</p>
         </div>
         <div class="learning-topics">
-          <img src="./resources/images/course-business.jpg" alt="man reading book" class="topic-img"/>
-          <h4>Business</h4>
-          <p>COURSES</p>
+            <a href="#"><img src="./resources/images/course-business.jpg" alt="man reading book" class="topic-img"/></a>
+          <h4><a href="#" class="courses-link">Business</a></h4>
+          <p class="courses">COURSES</p>
           <p class="topic-brief">Product Development, Business<br>
             Development, Startup</p>
         </div>
         <div class="learning-topics">
-          <img src="./resources/images/course-marketing.jpg" alt="man reading book" class="topic-img"/>
-          <h4>Marketing</h4>
-          <p>COURSES</p>
+            <a href="#"><img src="./resources/images/course-marketing.jpg" alt="man reading book" class="topic-img"/></a>
+          <h4><a href="#" class="courses-link">Marketing</a></h4>
+          <p class="courses">COURSES</p>
           <p class="topic-brief">Analytics, Content Marketing,<br>
             Mobile Marketing</p>
         </div>
@@ -137,7 +143,7 @@
 
       <h2 class="thesis">Thesis exhibit</h2>
       <div class="main-section">
-        <article class="main-article">
+        <article class="main-article" id="video-mobile">
           <video class="video-ex" width="95%" height="auto" controls>
             <source src="./resources/videos/thesis.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -147,7 +153,7 @@
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
         </div>
         </article>
-        <aside class="articles">
+        <aside class="articles footer-art">
           <article class="article-item greybg">
             <img src="./resources/images/thesis-fisma.jpg" class="article-img" alt="people walking"/>
             <div class="article-content">
@@ -171,13 +177,12 @@
         <div class="copy">
           &copy; 2018 Colmar Academy.  All rights reserved
         </div>
-        <div clss="footer-nav">
+        <div class="footer-nav">
          <ul>
            <li><a href="#">Terms</a></li>
            <li><a href="#">Privacy</a></li>
         </div>
       </footer>
-
   </div>
 </body>
 </html>
